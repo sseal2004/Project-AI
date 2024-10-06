@@ -1,0 +1,87 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Signup container */
+.signup-container {
+    background: linear-gradient(135deg, #ffffff, #f1f5f9);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add decorative circles for design */
+.signup-container::before,
+.signup-container::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(40, 116, 240, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.signup-container::before {
+    top: -120px;
+    right: -120px;
+}
+
+.signup-container::after {
+    bottom: -120px;
+    left: -120px;
+}
+
+/* Form Title */
+.signup-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Form Group Styles */
+.form-group label {
+    font-weight: 600;
+}
+
+.form-control {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #2874f0;
+    box-shadow: 0 0 8px rgba(40, 116, 240, 0.3);
+}
+
+/* Submit Button */
+.btn-primary {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    background-color: #2874f0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1a5bbd;
+    transform: translateY(-3px);
+}
+
+/* Login Link */
+.login-link a {
+    color: #2874f0;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+

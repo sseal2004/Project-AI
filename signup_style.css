@@ -1,0 +1,128 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Signup container */
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    background: linear-gradient(135deg, #ffffff, #f1f5f9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add decorative circles for design */
+.signup-container::before,
+.signup-container::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(40, 116, 240, 0.1);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.signup-container::before {
+    top: -120px;
+    right: -120px;
+}
+
+.signup-container::after {
+    bottom: -120px;
+    left: -120px;
+}
+
+/* Form Title */
+.signup-container h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #2874f0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #2874f0;
+    box-shadow: 0 0 8px rgba(40, 116, 240, 0.3);
+    outline: none;
+}
+
+/* Submit Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background-color: #2874f0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1a5bbd;
+    transform: translateY(-3px);
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.login-link a {
+    color: #2874f0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 500px) {
+    .signup-container {
+        padding: 20px;
+    }
+}
+input::placeholder {
+    font-size: 1.2rem; /* Adjust the size as needed */
+    color: #aaa; /* Optional: Change the placeholder color */
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .contact-container {
+            margin-top: 50px;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+        .contact-info {
+            margin-top: 30px;
+        }
+        .contact-info h5 {
+            margin-bottom: 10px;
+            color: #2874f0;
+        }
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Contact Section -->
+<div class="container contact-container">
+    <h2 class="text-center">Contact Us</h2>
+    <p class="text-center text-muted mb-5">We would love to hear from you. Please fill out the form below to get in touch.</p>
+
+    <div class="row">
+        <!-- Contact Form -->
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Subject of your message" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="col-md-6 contact-info">
+            <h5>Our Office</h5>
+            <p>123 Main Street, Suite 500<br>City, Country 12345</p>
+
+            <h5>Email Us</h5>
+            <p>support@company.com</p>
+
+            <h5>Call Us</h5>
+            <p>+1 (555) 123-4567</p>
+
+            <!-- Google Map Embed -->
+            <div class="map-responsive">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345086167!2d144.95373531532143!3d-37.816279179751594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43e2f8fffd%3A0xa5e04d96bdb12b06!2sFederation%20Square!5e0!3m2!1sen!2sus!4v1634567890123!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
